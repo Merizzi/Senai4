@@ -1,6 +1,6 @@
 namespace McBonaldsMVC.Models
 {
-    public class Shake : Produto 
+    public class Shake : Produto
     {
         
     }
