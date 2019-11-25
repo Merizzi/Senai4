@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos RolêTop Administrador</title>
+    <link href="img/logo_simbolo.png" rel="icon" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Solid:900%7COpen+Sans" rel="stylesheet">
+    <link href="css/eventosadm.css" rel="stylesheet" type="text/css">
+    <!-- Importar o Font Awesome para o projeto -->
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="section-container">
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <!-- HTML para colocar os ícones do FA -->
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index.html" >Sair</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="eventosadm.html#logo-area">Eventos</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="eventosadm.html#historia" class="active">Calendário</a></li>
+                    <li>
+                        <a href="index.html">
+                            <img src="img/logo.png" class="logo" id="bt-peca_ja" onclick="window.location.href='#'">
+                        </a>  
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section id="logo-area">
+            
+            
+            <div class="slidershow middle">
+                
+                <div class="slides">
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+                    <input type="radio" name="r" id="r4">
+                    <input type="radio" name="r" id="r5">
+                    <div class="slide s1">
+                        <img src="img/eventtttss.jpg " alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/lusa.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/juve.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/eventogalp.jpg" alt="">
+                    </div>
+                </div>
+                
+                <div class="navigation">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                    <label for="r3" class="bar"></label>
+                    <label for="r4" class="bar"></label>
+                </div>
+                <div class="navigation2">
+                    <button type="button" onclick="alert('Evento aceito com Sucesso! Iremos avisar ao cliente sobre o acordo')" class="back-to-top-btn">Aceitar</button>
+                    <button type="button" onclick="alert('Evento recusado, o cliente será avisado!')" class="back-to-top-btn">Recusar</button>
+                </div>
+            </div>
+            
+        </section>
+    </header>
+</header>
+<main>
+    
+    
+    <section id="historia">
+        <div class="section-container">
+            <div class="flex-group">
+                <img src="img/www.png" class="canlen"> 
+                <a class="blue"> Azul: Eventos Já Realizados </a>
+                <a class="red"> Vermelho: Eventos Recusados</a>
+                <a class="green"> Verde: Eventos Aceitos</a>
+                <a class="yellow"> Amarelo: Eventos Pendentes</a>
+            </div>
+            </div>
+        </section>
+        
+        
+    </main>
+    <footer>
+
+        
+            <button id="back-to-top-btn" onclick="window.location.href='#'">
+                <a class="fas fa-angle-double-up"> </a>
+            </button>
+        
+        
+    </footer>
+    
+    <!--Abrir ou fechar meu mobile-->
+    <script>
+        function toggleMobileMenu() {
+            var ul = document.querySelector("nav ul");
+            var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+            var icon = document.querySelector(".icon > i");
+            
+            ul.classList.toggle("mobile-mode");
+            
+            if (icon.classList.contains("fa-bars")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.remove("fa");
+                
+                icon.classList.add("fas");
+                icon.classList.add("fa-times");
+            } else {
+                icon.classList.remove("fas");
+                icon.classList.remove("fa-times");
+                
+                icon.classList.add("fa");
+                icon.classList.add("fa-bars");
+            }
+            
+            for (var button of commonButtons) {
+                button.classList.toggle("active");
+            }
+            
+        }
+        
+    </script>
+</body>
+
+</html>

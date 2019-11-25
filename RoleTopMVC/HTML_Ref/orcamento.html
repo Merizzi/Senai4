@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro de Evento Rolêtop</title>
+    <link href="img/logo_simbolo.png" rel="icon" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Solid:900%7COpen+Sans" rel="stylesheet">
+    <link href="css/orcamento.css" rel="stylesheet" type="text/css">
+    <!-- Importar o Font Awesome para o projeto -->
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="section-container">
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <!-- HTML para colocar os ícones do FA -->
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index.html"> Principal</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index.html#hamburgueres">Eventos</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="orcamento.html"class="active">Orçamento</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="cadastro.html" >Cadastro</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index.html#local">Galeria</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="login.html" >Login</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index.html#local">Sobre Nós</a></li>
+                    <li>
+                        <a href="index.html">
+                            <img src="img/logo.png" class="logo" id="bt-peca_ja" onclick="window.location.href='#'">
+                        </a>  
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
+    <main>
+        <div class="content-footer">
+            <div class="content-icons">
+                <form action="#">
+                    <a class="titleC">Cadastro De Evento</a>
+                    <div>
+                        <a> Nome Do Dono</a>
+                        <a> Nome Do Evento</a>
+                    </div>
+                    <div>
+                        <input type="name" placeholder="Nome Dono" />
+                        <input type="name" placeholder="Nome Evento" />
+                    </div>
+                </form>
+            </div>
+            <div class="content-address">
+                <div class="content-address-info">
+                    <form action="#">
+                        <a> Email</a>
+                        <input type="email" placeholder="Email" class="email"/>
+                        <a> CPF/CNPJ</a>
+                        <input type="text" placeholder="CPF/CNPJ "class="cpfinp" >
+                    </form>
+                    <a> Data Evento</a>
+                    <input type="date" placeholder=""  class="datainp"/>
+                    <a> Horario Evento</a>
+                    <input type="time" placeholder=""  class="datainp"/>
+                    <a> Descrição Evento</a>
+                    <input type="text" placeholder=""  class="datainp" id="descrinp"/>
+                    <div class="content-senha">
+
+                    <div class="content-sen">
+                        <a>Celular</a> 
+                        <a>Confirmar Senha </a>
+                    </div>
+                    <div class="content-sen-inp">
+                            <input type="text" placeholder="(11 94424-5786)"  class="senhainp"/>
+                            <input type="password" placeholder=""  class="senhainp"/>
+                    </div>
+                    </div>
+                    <div class="content-address-infob">
+                        <button id="back-to-top-btn" onclick="window.location.href='eventosadm.html'"> Login </button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>       
+        
+    </main>
+    <footer>
+      
+    </footer>
+    
+    <!--Abrir ou fechar meu mobile-->
+    <script>
+        function toggleMobileMenu() {
+            var ul = document.querySelector("nav ul");
+            var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+            var icon = document.querySelector(".icon > i");
+            
+            ul.classList.toggle("mobile-mode");
+            
+            if (icon.classList.contains("fa-bars")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.remove("fa");
+                
+                icon.classList.add("fas");
+                icon.classList.add("fa-times");
+            } else {
+                icon.classList.remove("fas");
+                icon.classList.remove("fa-times");
+                
+                icon.classList.add("fa");
+                icon.classList.add("fa-bars");
+            }
+            
+            for (var button of commonButtons) {
+                button.classList.toggle("active");
+            }
+            
+        }
+        
+    </script>
+</body>
+
+</html>
