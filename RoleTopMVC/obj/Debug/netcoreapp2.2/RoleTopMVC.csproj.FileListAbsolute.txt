@@ -28,3 +28,6 @@ C:\Users\43097878866\Documents\Senai4\RoleTopMVC\obj\Debug\netcoreapp2.2\RoleTop
 C:\Users\43097878866\Documents\Senai4\RoleTopMVC\obj\Debug\netcoreapp2.2\RoleTopMVC.dll
 C:\Users\43097878866\Documents\Senai4\RoleTopMVC\obj\Debug\netcoreapp2.2\RoleTopMVC.pdb
 C:\Users\43097878866\Documents\Senai4\RoleTopMVC\obj\Debug\netcoreapp2.2\RoleTopMVC.csproj.CopyComplete
+C:\Users\43097878866\Documents\Senai4\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Usuario\Login.g.cshtml.cs
+C:\Users\43097878866\Documents\Senai4\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Cadastro\Cadastro.g.cshtml.cs
+C:\Users\43097878866\Documents\Senai4\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Orcamento\Orcamento.g.cshtml.cs
