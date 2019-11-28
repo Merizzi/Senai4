@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using RoleTopMVC.ViewModels;
 
 namespace RoleTopMVC.Controllers
 {
@@ -6,7 +7,11 @@ namespace RoleTopMVC.Controllers
     {
          public IActionResult Orcamento()
         {
-            return View();
+            return View(new BaseViewModel()
+            {
+                NomeView= "Orcamento"
+            }
+            );
         }
     }
 }

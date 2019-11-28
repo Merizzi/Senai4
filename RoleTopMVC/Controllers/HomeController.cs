@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using RoleTopMVC.Models;
+using RoleTopMVC.ViewModels;
 
 namespace RoleTopMVC.Controllers
 {
@@ -12,8 +13,10 @@ namespace RoleTopMVC.Controllers
     {
         public IActionResult Index()
         {
-            ViewData["NomeView"] = "Home";
-            return View();
+            return View(new BaseViewModel()
+            {
+                NomeView = "Home"
+            });
         }
 
         public IActionResult Privacy()

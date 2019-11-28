@@ -3,15 +3,16 @@ using RoleTopMVC.ViewModels;
 
 namespace RoleTopMVC.Controllers
 {
-    public class CadastroController : Controller
+    public class LoginController : Controller
     {
-        public IActionResult Cadastro()
+        public IActionResult Login()
         {
-            return View(new BaseViewModel()
+             return View(new BaseViewModel()
             {
-                NomeView= "Cadastro"
+                NomeView= "Login"
             }
             );
         }
+        
     }
 }

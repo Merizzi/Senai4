@@ -1,6 +1,4 @@
-﻿@{
-    var nomeView = (string) ViewData["NomeView"];
-}
+﻿@model RoleTopMVC.ViewModels.BaseViewModel
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -15,6 +13,19 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <!-- Importar o Font Awesome para o projeto -->
     <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+    @if("Cadastro".Equals(@Model.NomeView))
+    {
+        <link href="../css/cadastro.css" rel="stylesheet" type="text/css">
+    }
+    @if("Orcamento".Equals(@Model.NomeView))
+    {
+        <link href="../css/orcamento.css" rel="stylesheet" type="text/css">
+    }
+
+    @if("Login".Equals(@Model.NomeView))
+    {
+        <link href="../css/login.css" rel="stylesheet" type="text/css">
+    }
 </head>
 
 <body>
@@ -28,12 +39,12 @@
                             <i class="fa fa-bars"></i>
                         </a>
                     </li>
-                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index.html" class="active">Principal</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Index", "Home")'>Principal</a></li>
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index.html#hamburgueres">Eventos</a></li>
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Orcamento", "Orcamento")'>Orçamento</a></li>
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Cadastro", "Cadastro")'>Cadastro</a></li>
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index.html#local">Galeria</a></li>
-                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller= "Usuario" asp-action="Login">Login</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Login", "Login")'>Login</a></li>
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Index", "Home")#local'>Sobre Nós</a></li>
                     <li>
                         <a href="index.html">
