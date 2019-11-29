@@ -3001,11 +3001,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\43097878866\\Documents\\Senai4\\RoleTopMVC\\Views\\Usuario\\Login.cshtml",
-      "TargetPath": "Views\\Usuario\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\43097878866\\Documents\\Senai4\\RoleTopMVC\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -3013,6 +3008,11 @@
     {
       "FilePath": "c:\\Users\\43097878866\\Documents\\Senai4\\RoleTopMVC\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\43097878866\\Documents\\Senai4\\RoleTopMVC\\Views\\Login\\Login.cshtml",
+      "TargetPath": "Views\\Login\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
