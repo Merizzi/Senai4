@@ -133,14 +133,6 @@ body {
     padding: 12px 15px;
     margin: 4px 0;
  }
- .email{
-    width: 40%;
-    height: 20%;
- }
- .cpfinp{
-     width: 22%;
-     height: 24%;
- }
 
 /*BOTAAAAAAAAAAO LOGIN FUNCIONARIO */
 .content-address-info > form > div > button { 
@@ -363,7 +355,7 @@ div > div >  a {
 }
 .senhainp{
     width: 40%;
-    height: 20%;
+    height: 15%;
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
@@ -373,6 +365,37 @@ div > div >  a {
     padding: 12px 15px;
     margin: 4px 0;
 }
+.senhaconf{
+    width: 40%;
+    height: 15%;
+    border-radius: 10px;
+    border:2px solid #ffc600;
+    background-color: #ffc600;
+    color: #000;
+    padding: 12px 15px;
+    margin: 4px 0;
+}
 
+.email{
+    width: 40%;
+    height: 20%;
+    border-radius: 10px;
+    border:2px solid #ffc600;
+    background-color: #ffc600;
+    color: #000;
+    padding: 12px 15px;
+    margin: 4px 0;
+}
+
+.cpfinp{
+    width: 40%;
+    height: 20%;
+    border-radius: 10px;
+    border:2px solid #ffc600;
+    background-color: #ffc600;
+    color: #000;
+    padding: 12px 15px;
+    margin: 4px 0;
+}
 /************************************************** ******************/
 

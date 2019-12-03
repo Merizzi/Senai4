@@ -2,28 +2,27 @@
 <main>
         <div class="content-footer">
             <div class="content-icons">
-                <form action="#">
+                <form method ="POST" action='@Url.Action("CadastrarCliente", "Cadastro")'>
                     <a class="titleC">Cadastro De Usuários</a>
                     <div>
                         <a> Nome</a>
                         <a> Sobrenome</a>
                     </div>
                     <div>
-                        <input type="name" placeholder="Nome" />
-                        <input type="name" placeholder="Sobrenome" />
+                        <input type="text" placeholder="Nome" id="nome" maxlength="20" minlength="3" name="nome"/>
+                        <input type="text" placeholder="Sobrenome" id="sobrenome" maxlength="20" minlength="3" name="sobrenome"/>
                     </div>
-                </form>
+                
             </div>
             <div class="content-address">
                 <div class="content-address-info">
-                    <form action="#">
                         <a> Email</a>
-                        <input type="email" placeholder="Email" class="email"/>
+                        <input type="email" placeholder="Email" class="email" id="email" maxlength="20" minlength="3" name"email"/>
                         <a> CPF/CNPJ</a>
-                        <input type="text" placeholder="CPF/CNPJ "class="cpfinp" >
-                    </form>
+                        <input type="text" placeholder="CPF/CNPJ "class="cpfinp" id="cpf" maxlength="11" minlength="11" name="cpf"/>
+                    
                     <a> Data</a>
-                    <input type="date" placeholder=""  class="datainp"/>
+                    <input type="date" placeholder=""  class="datainp" id="data-nascimento" maxlength="20" min="3" name="data-nascimento" />
 
                     <div class="content-senha">
 
@@ -32,15 +31,15 @@
                         <a>Confirmar Senha </a>
                     </div>
                     <div class="content-sen-inp">
-                            <input type="password" placeholder=""  class="senhainp"/>
-                            <input type="password" placeholder=""  class="senhainp"/>
+                            <input type="password" placeholder=""  class="senhainp" id="senha" maxlength="20" minlength="6" name="senha"/>
+                            <input type="password" placeholder=""  class="senhaconf" id="confirmar-senha" maxlength="20" minlength="6" name="confirmar-senha" />
                     </div>
                     </div>
                     <div class="content-address-infob">
-                        <button id="back-to-top-btn" onclick="window.location.href='eventosadm.html'"> Login </button>
+                        <button id="back-to-top-btn"> Login </button>
                     </div>
                 </div>
-                
+                </form>
             </div>
         </div>       
         
