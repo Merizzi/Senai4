@@ -4,6 +4,7 @@ using RoleTopMVC.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RoleTopMVC.Repositories;
+using RoleTopMVC.ViewModels;
 
 namespace RoleTopMVC.Controllers
 {
@@ -41,50 +42,47 @@ namespace RoleTopMVC.Controllers
                 {
                     if(cliente.Senha.Equals(senha))
                     {
-                        switch(cliente.TipoUsuario){
-                            case (uint) TiposUsuario.CLIENTE:
                             HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario);
                             HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
-                            HttpContext.Session.SetString(SESSION_CLIENTE_TIPO, cliente.TipoUsuario.ToString());
-                            
-                            return RedirectToAction("Historico","Cliente");
-
-                            default:
-                                HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario);
-                                HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
-                                HttpContext.Session.SetString(SESSION_CLIENTE_TIPO, cliente.TipoUsuario.ToString());
-
-                                return RedirectToAction("Dashboard","Administrador");
-                        }
+                            return RedirectToAction("Historico","Cliente");              
                     }
                     else
                     {
-                        return View("Erro", new RespostaViewModel("Senha incorreta"));
+                        return View("Erro", new RespostaViewModel(){
+                            Mensagem = $"senha incorreta {senha}",
+                            NomeView = "Erro"
+                        });
                     }
                 }
                 else
                 {
-                    return View("Erro", new RespostaViewModel($"Usuário {usuario} não encontrado"));
+                    return View("Erro", new RespostaViewModel(){
+                        Mensagem = $"Usuario: {usuario} não foi encontrado",
+                        NomeView = "Erro"
+                    });
                 }
             }
             catch(Exception e)
             {
                 System.Console.WriteLine(e.StackTrace);
-                return View("Erro");
+                return View("Erro", new RespostaViewModel(){
+                    Mensagem= "Aaaaaaaaaaaaaaaaaaaaaa",
+                    NomeView = "Erro"
+                });
             }
         }
         
-        public IActionResult Historico()
-        {
-            var emailCliente = ObterUsuarioSession();
+        // public IActionResult Historico()
+        // {
+        //     var emailCliente = ObterUsuarioSession();
 
-            return View(new HistoricoViewModel()
-            {
-                NomeView = "Histórico",
-                UsuarioEmail = ObterUsuarioSession(),
-                UsuarioNome = ObterUsuarioNomeSession()
-            });
-        }
+        //     return View(new HistoricoViewModel()
+        //     {
+        //         NomeView = "Histórico",
+        //         UsuarioEmail = ObterUsuarioSession(),
+        //         UsuarioNome = ObterUsuarioNomeSession()
+        //     });
+        // }
 
         public IActionResult Logoff()
         {

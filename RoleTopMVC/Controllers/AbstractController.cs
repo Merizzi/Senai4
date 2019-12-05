@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace RoleTopMVC.Controllers
 {
-    public class AbstractController
+    public class AbstractController : Controller
     {
         protected const string SESSION_CLIENTE_EMAIL = "cliente_email";
         protected const string SESSION_CLIENTE_NOME  = "cliente_nome";
