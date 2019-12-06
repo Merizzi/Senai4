@@ -4,7 +4,6 @@ using RoleTopMVC.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RoleTopMVC.Repositories;
-using RoleTopMVC.ViewModels;
 
 namespace RoleTopMVC.Controllers
 {
@@ -72,24 +71,24 @@ namespace RoleTopMVC.Controllers
             }
         }
         
-        // public IActionResult Historico()
-        // {
-        //     var emailCliente = ObterUsuarioSession();
+        public IActionResult Historico()
+        {
+            var emailCliente = ObterUsuarioSession();
 
-        //     return View(new HistoricoViewModel()
-        //     {
-        //         NomeView = "Histórico",
-        //         UsuarioEmail = ObterUsuarioSession(),
-        //         UsuarioNome = ObterUsuarioNomeSession()
-        //     });
-        // }
+            return View(new HistoricoViewModel()
+            {
+                NomeView = "Historico",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
+        }
 
         public IActionResult Logoff()
         {
             HttpContext.Session.Remove(SESSION_CLIENTE_EMAIL);
             HttpContext.Session.Remove(SESSION_CLIENTE_NOME);
             HttpContext.Session.Clear();
-            return RedirectToAction("Login", "Login");
+            return RedirectToAction("Index", "Home");
         }
     }
 }
