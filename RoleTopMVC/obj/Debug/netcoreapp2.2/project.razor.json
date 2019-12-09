@@ -3021,11 +3021,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\43097878866\\Documents\\Senai4\\RoleTopMVC\\Views\\Login\\Login.cshtml",
-      "TargetPath": "Views\\Login\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\43097878866\\Documents\\Senai4\\RoleTopMVC\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"

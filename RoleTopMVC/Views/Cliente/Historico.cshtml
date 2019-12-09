@@ -1,7 +1,7 @@
 @model RoleTopMVC.ViewModels.HistoricoViewModel
 @{
-    ViewData["Title"] = "Pedidos - McBonald's";
-    ViewData["H2"] = "Histórico de Pedidos";
+    ViewData["Title"] = "Pedidos - RoleTop";
+    ViewData["H2"] = "Histórico de Eventos";
 }
 
 <main>
@@ -10,9 +10,9 @@
         <thead class="hisorico">
             <tr>
                 <th>Data</th>
-                <th>Hamburguer</th>
-                <th>Shake</th>
-                <th>Preço</th>
+                <th>Horario</th>
+                <th>Nome do Evento</th>
+                <th>Responsável do Evento</th>
             </tr>
         </thead>
         <tbody>
@@ -28,3 +28,44 @@
     </table>
 
 </main>
+<footer>
+        
+        <div class="section-container">
+            
+            <div class="content-footer">
+                <div class="content-icons">
+                    <img src="../img/instaa.png"   class="iconss"> 
+                    <a> #Roletop </a>
+                    <img src="../img/twitter.png" class="iconss2">
+                    <a> #Roletoop</a>
+                    <img src="../img/face.png"    class="iconss3">
+                    <a> faceboo.com/roletop</a>
+                </div>
+                <div class="content-address">
+                    <address>
+                        <img src="../img/icon-small-map-4f3b6656.png" class="logmp">
+                        <div class="content-address-info">
+                            <a> Avenida de Limeira,  </a>
+                            <a> Campos Elíseos - SP  </a>
+                            <a>  N°539    </a>
+                        </div>
+                    </address>
+                    <address>
+                        <img src="../img/icon-small-phone-ee157a50.png" class="logotel">
+                        <div class="content-address-info">
+                            <a> mcbonalds@email.com  </a>
+                            <a> 11 1234 6789  </a>  
+                        </div>
+                    </address>
+                </div>
+                <div id="local">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8869961505543!2d-46.648477085071065!3d-23.53656648469522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5843deade6e3%3A0x124f377d06c7e71f!2sAlameda+Bar%C3%A3o+de+Limeira%2C+539+-+Campos+El%C3%ADseos%2C+S%C3%A3o+Paulo+-+SP%2C+01202-001!5e0!3m2!1sen!2sbr!4v1550223658410"
+                    width="100%" height="100%" frameborder="0" style="border:0" ></iframe>
+                </div>
+            </div>
+            
+
+            
+        </div>
+    </footer>

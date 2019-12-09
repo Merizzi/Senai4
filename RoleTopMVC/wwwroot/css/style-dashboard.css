@@ -1,5 +1,8 @@
 main {
-    width: 80%;
+    width: 85%;
+    margin-top: 22%;
+    justify-content: center;
+    margin-bottom: 10%;
 }
 
 #painel {
@@ -91,4 +94,8 @@ thead > tr:first-child > th:last-child {
     }
 
 
+}
+
+tr > td {
+    color: purple;
 }

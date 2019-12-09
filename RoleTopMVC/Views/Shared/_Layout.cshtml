@@ -32,6 +32,12 @@
         <link href="../css/style-dashboard.css" rel="stylesheet" type="text/css">
         <link href="../css/style.css" rel="stylesheet" type="text/css">
     }
+    @if("Erro".Equals(@Model.NomeView))
+    {
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+         <link href="../css/style-dashboard.css" rel="stylesheet" type="text/css">
+        
+    }
     
 </head>
 
@@ -54,8 +60,8 @@
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Login", "Cliente")'>Login</a></li>
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Index", "Home")#local'>Sobre Nós</a></li>
                     <li>
-                        <a href="index.html">
-                            <img src="../img/logo.png" class="logo" id="bt-peca_ja" onclick="window.location.href='#'">
+                        <a onclick="toggleMobileMenu()" href='@Url.Action("Index", "Home")'>
+                            <img src="../img/logo.png" class="logo" id="bt-peca_ja" >
                         </a>  
                     </li>
                 </ul>
