@@ -51,12 +51,15 @@ body {
 
 .content-icons   { 
    display: flex;
-   width: 67%;
+   width: 1200px;
    height: 47%;
    justify-content: space-around;
    flex-direction: column;
    align-items: center;
    
+}
+div> form{
+    min-width: 1200px;
 }
 .content-icons > form   { 
     display: flex;
@@ -66,7 +69,7 @@ body {
     flex-direction: column;
     align-items: center;
  }
- .content-icons > form > div > input { 
+ .content-icons > input { 
     width: 30%;
     height: 20%;
     display: flex;
@@ -86,7 +89,7 @@ body {
 
 @media only screen and ( min-width: 576px) { 
     .content-icons {
-        width: 40%;
+        width: 100%;
 
     }   
 }
