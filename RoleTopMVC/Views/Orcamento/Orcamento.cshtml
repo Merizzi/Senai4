@@ -38,6 +38,14 @@
                             <input type="text" placeholder="(11 94424-5786)"  class="senhainp" required name="celular"/>
 
                     </div>
+                    <label for="serviços"> Opção de Aluguel:  </label>
+                    <select id= "serviços" name="opcao-servicos" required>
+                        <option value="" disable selected> Selecione </option>
+                        @foreach (var s in Model.Serviços)
+                        {
+                            <option value="s.Nome"> @s.Nome</option>
+                        }
+                    </select>  
                     </div>
                     <div class="content-address-infob">
                         <button id="back-to-top-btn"> Login </button>
