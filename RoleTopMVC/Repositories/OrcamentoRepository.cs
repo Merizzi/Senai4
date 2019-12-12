@@ -41,7 +41,7 @@ namespace RoleTopMVC.Repositories
 
         public List<Orcamento> ObterTodos(){
             var linhas = File.ReadAllLines(PATH);
-            List<Orcamento> pedidos = new List<Orcamento>();
+            List<Orcamento> orcamentos = new List<Orcamento>();
 
             foreach (var linha in linhas){
                 Orcamento orcamento = new Orcamento();
@@ -52,7 +52,7 @@ namespace RoleTopMVC.Repositories
                 orcamento.Evento = ExtrairValorDoCampo("evento", linha);
                 orcamento.Horario = DateTime.Parse(ExtrairValorDoCampo("horario", linha));
 
-                orcamento.Add(orcamento);
+                orcamentos.Add(orcamento);
             }
             return orcamentos;
         }
@@ -60,7 +60,7 @@ namespace RoleTopMVC.Repositories
         private string PrepararOrcamentoCSV (Orcamento orcamento){
             Cliente c = orcamento.Cliente;
 
-            return $"cliente_nome={c.Nome};cliente_email{c.Email};cliente_cpf{c.Cpf};evento={orcamento.Evento};horario={orcamento.Horario}";
+            return $"cliente_nome={c.Nome};cliente_email={c.Email};cliente_cpf={c.Cpf};evento={orcamento.Evento};horario={orcamento.Horario}";
         }
 
     }

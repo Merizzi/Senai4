@@ -1,10 +1,10 @@
 namespace RoleTopMVC.Enums
 {
-    public class StatusPedido : uint
-    {
-        PENDENTE = 0,
-        APROVADO = 1,
-        REPROVADO = 2
+    // public class StatusPedido : uint
+    // {
+    //     PENDENTE = 0,
+    //     APROVADO = 1,
+    //     REPROVADO = 2
         
-    }
+    // }
 }

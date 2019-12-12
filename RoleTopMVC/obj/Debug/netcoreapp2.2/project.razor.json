@@ -2991,13 +2991,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\43097878866\\Documents\\Senai4\\RoleTopMVC\\Views\\Orcamento\\Orcamento.cshtml",
-      "TargetPath": "Views\\Orcamento\\Orcamento.cshtml",
+      "FilePath": "c:\\Users\\43097878866\\Documents\\Senai4\\RoleTopMVC\\Views\\Cliente\\Historico.cshtml",
+      "TargetPath": "Views\\Cliente\\Historico.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\43097878866\\Documents\\Senai4\\RoleTopMVC\\Views\\Cliente\\Historico.cshtml",
-      "TargetPath": "Views\\Cliente\\Historico.cshtml",
+      "FilePath": "c:\\Users\\43097878866\\Documents\\Senai4\\RoleTopMVC\\Views\\Orcamento\\Index.cshtml",
+      "TargetPath": "Views\\Orcamento\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
