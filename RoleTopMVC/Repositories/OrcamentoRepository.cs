@@ -50,7 +50,9 @@ namespace RoleTopMVC.Repositories
                 orcamento.Cliente.Email = ExtrairValorDoCampo ("cliente_email", linha);
                 orcamento.Cliente.Cpf = ExtrairValorDoCampo("cliente_cpf", linha);
                 orcamento.Evento = ExtrairValorDoCampo("evento", linha);
+                orcamento.Servicos = ExtrairValorDoCampo("evento_servicos",linha);
                 orcamento.Horario = DateTime.Parse(ExtrairValorDoCampo("horario", linha));
+                orcamento.DataEvento = DateTime.Parse(ExtrairValorDoCampo("dataevento", linha));
 
                 orcamentos.Add(orcamento);
             }
@@ -60,7 +62,8 @@ namespace RoleTopMVC.Repositories
         private string PrepararOrcamentoCSV (Orcamento orcamento){
             Cliente c = orcamento.Cliente;
 
-            return $"cliente_nome={c.Nome};cliente_email={c.Email};cliente_cpf={c.Cpf};evento={orcamento.Evento};horario={orcamento.Horario}";
+
+            return $"cliente_nome={c.Nome};cliente_email={c.Email};cliente_cpf={c.Cpf};evento={orcamento.Evento};evento_servicos={orcamento.Servicos};horario={orcamento.Horario};dataevento={orcamento.DataEvento}";
         }
 
     }

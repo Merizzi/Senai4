@@ -1,5 +1,4 @@
-nome=zmatheus;sobrenome=matheus;email=m@m.com;cpf=12187481428;data_nascimento=21/02/2222 00:00:00;senha=123456
-nome=pablo;sobrenome=merissi;email=p@m.com;cpf=30292282263;data_nascimento=21/08/2001 00:00:00;senha=123456
-nome=cesar;sobrenome=sportore;email=c@s.com;cpf=29876553377;data_nascimento=21/08/2001 00:00:00;senha=123456
-nome=pablo;sobrenome=merissi;email=m@p.com;cpf=43025654466;data_nascimento=21/08/2001 00:00:00;senha=123456
-nome=alexandre;sobrenome=f;email=a@f.com;cpf=43025654466;data_nascimento=21/08/2001 00:00:00;senha=123456
+tipo_usuario=0;nome=admin;sobrenome=merissi;email=admin@a.com;cpf=29282828822;data_nascimento=21/08/2001 00:00:00;senha=123456
+tipo_usuario=1;nome=pablo;sobrenome=merizzi;email=p@m.com;cpf=43097878866;data_nascimento=21/08/2001 00:00:00;senha=123456
+tipo_usuario=1;nome=pablo;sobrenome=merizzi;email=p@m.com;cpf=43097878866;data_nascimento=21/08/2001 00:00:00;senha=123456
+tipo_usuario=0;nome=flavio;sobrenome=1asgoiasjgsoiajasg;email=f@c.com;cpf=25635988551;data_nascimento=21/05/2001 00:00:00;senha=123456

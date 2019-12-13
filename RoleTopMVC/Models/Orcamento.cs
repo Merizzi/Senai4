@@ -11,6 +11,7 @@ namespace RoleTopMVC.Models
         public Cliente Cliente {get;set;}
         public DateTime DataEvento {get;set;}
         public DateTime Horario {get;set;} 
+        public string Servicos {get;set;}
         public string Descricao {get;set;}
         public string Celular {get;set;}
         public ulong Id {get;set;}
@@ -22,6 +23,7 @@ namespace RoleTopMVC.Models
             this.Cliente = new Cliente();
             this.Evento = Evento;
             this.Horario = Horario;
+            this.Servicos = Servicos;
             this.Descricao = Descricao;
             this.FormaPagamento = FormaPagamento;
             this.Celular = Celular; 

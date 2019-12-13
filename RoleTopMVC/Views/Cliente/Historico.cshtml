@@ -16,14 +16,14 @@
             </tr>
         </thead>
         <tbody>
-           
+           @foreach( var orcamento in Model.Eventos){
                 <tr>
-                    <td>qq coisa</td>
-                    <td>qq coisa1</td>
-                    <td>qq coisa2</td>
-                    <td>qq coisa3</td>
+                    <td>@orcamento.DataEvento</td>
+                    <td>@orcamento.Horario</td>
+                    <td>@orcamento.Evento</td>
+                    <td>@orcamento.Cliente.Nome</td>
                 </tr>
-            
+            }
         </tbody>
     </table>
 

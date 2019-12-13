@@ -49,6 +49,11 @@ namespace RoleTopMVC.Controllers
 
             orcamento.Cliente = cliente;
 
+            orcamento.Evento = form["evento"];
+            orcamento.Horario = DateTime.Parse(form["horario"]);
+            orcamento.DataEvento = DateTime.Parse(form["dataevento"]);
+            orcamento.Servicos = form["servico"];
+
             if(orcamentoRepository.Inserir (orcamento))
             {
                 return View("Sucesso", new RespostaViewModel()

@@ -1,3 +1,2 @@
-cliente_nome=teste;cliente_emailteste@teste;cliente_cpf;evento=;horario=01/01/0001 00:00:00
-cliente_nome=lucas;cliente_emaill@s.com;cliente_cpf;evento=;horario=01/01/0001 00:00:00
-cliente_nome=lucas;cliente_emaill@s.com;cliente_cpf;evento=;horario=01/01/0001 00:00:00
+cliente_nome=pablo;cliente_email=p@m.com;cliente_cpf=43097878866;evento=merizzi party;evento_servicos=ambos;horario=13/12/2019 23:02:00;dataevento=20/02/2020 00:00:00
+cliente_nome=pablo;cliente_email=p@m.com;cliente_cpf=43097878866;evento=merizziaspafkas;evento_servicos=ambos;horario=13/12/2019 23:00:00;dataevento=20/04/2020 00:00:00

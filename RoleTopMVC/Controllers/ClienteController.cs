@@ -10,6 +10,7 @@ namespace RoleTopMVC.Controllers
     public class ClienteController : AbstractController
     {
         private ClienteRepository clienteRepository = new ClienteRepository();
+        private OrcamentoRepository orcamentoRepository = new OrcamentoRepository();
         
         [HttpGet]
         public IActionResult Login()
@@ -74,9 +75,11 @@ namespace RoleTopMVC.Controllers
         public IActionResult Historico()
         {
             var emailCliente = ObterUsuarioSession();
+            var orcamentosCliente = orcamentoRepository.ObterTodosPorCliente(emailCliente);
 
             return View(new HistoricoViewModel()
             {
+                Eventos = orcamentosCliente,
                 NomeView = "Historico",
                 UsuarioEmail = ObterUsuarioSession(),
                 UsuarioNome = ObterUsuarioNomeSession()

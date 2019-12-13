@@ -1,9 +1,9 @@
 namespace RoleTopMVC.Enums
 {
-//     public class TiposUsuario
-//    {
-//        ADMINISTRADOR = 0,
+    public enum TiposUsuario
+   {
+       ADMINISTRADOR = 0,
 
-//        CLIENTE = 1
-//     }
+       CLIENTE = 1
+    }
 }
